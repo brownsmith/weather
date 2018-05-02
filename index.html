@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Weather</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/weather.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/conditions.css" type="text/css" media="all" />
+  </head>
+  <body>
+
+  	<div id="panel" class="panel">
+	  	
+  		<!-- ############## FRONT ############## -->
+	  	<div class="front">
+	  		<div class="inner">
+		  		<div id="displayWeather">
+
+		  		</div>
+		  		<a href="#" class="settingsBtn" id="settingsBtn">i</a>
+		  	</div>
+	  	</div>
+
+	  	<!-- ############## BACK ############## -->
+	  	<div id="settings" class="back">
+	  		<div class="inner">
+	  			<h4>Settings</h4>
+	  			<div id="showCurrentLocation"></div>
+	  			<p>
+	  				<input type="text" id="newLocation" placeholder="enter new location" />
+					<a href="" id="submitLocation" class="mainBtn">Submit</a>
+				</p>
+				<p>
+					<!-- <input type="button" id="saveFave" value="Save location to favourites" /> -->
+					<a href="" id="clearLoc" class="mainBtn">Get weather for current location</a>
+				</p>
+				<p>
+					<div class="temp-btns">
+						<a id="showTempF" value="&#176;F" class="f showTemp">&#176;F</a>
+						<a id="showTempC" value="&#176;C" class="c showTemp">&#176;C</a>
+					</div>
+				</p>
+				<div id="favourites">
+
+				</div>
+				<div class="about">
+					<p>
+						Weather App by Paul Brownsmith 2013
+					</p>
+					<p>
+						Any questions or queries, please contact <a href="http://twitter.com/webstandesign">@webstandesign</a>
+					</p>
+					<p>
+						Weather data via <a href="http://www.worldweatheronline.com">worldweatheronline.com</a>
+					</p>
+				</div>
+				<a href="#" id="backBtn" class="backBtn"><</a>
+			</div>
+	  	</div>
+
+	</div>
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+	<script type="text/javascript" src="js/weather.js"></script>
+	<!-- <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-873989-4']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script> -->
+  </body>
+ </html>
+
+
+
